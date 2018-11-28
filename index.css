@@ -1,6 +1,95 @@
+:root {
+  --blue: #23B5AF;
+  --light-blue: #A9DDD9;
+  --yellow: #EEBA4C;
+  --red: #E3493B;
+  --gray: #3A3A3C;
+  --seethru: opacity(.8);
+  --shadow: box-shadow: 0 0 5px #ccc;
+}
+
+
+
 body {
   background-image: url("shoot-n-design-71270-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  background-attachment: fixed;
+}
+
+.nav-bar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: var(--gray);
+}
+
+.nav-bar a {
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  color: var(--yellow);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-bar a:hover {
+  background-color: var(--light-blue);
+  color: var(--gray);
+}
+
+.top {
+  background-color: rgba(58,58,60,.3);
+  margin: 100px;
+  padding: 30px;
+  text-align: center;
+  color: var(--gray);
+  box-shadow:  0 20px #000;
+}
+
+.top p {
+  font-size: 20px;
+  padding-top: 20px;
+}
+.main {
+  background-color: rgba(35,181,175,.6);
+  margin: 20px;
+  border: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.box {
+  background-color: var(--gray);
+  color: var(--yellow);
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+  overflow: auto;
+  font-size: 15px;
+}
+
+.box a {
+  position: relative;
+  color: var(--yellow);
+  display: block;
+  justify-content: center;
 }
