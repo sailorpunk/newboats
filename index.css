@@ -8,8 +8,6 @@
   --shadow: box-shadow: 0 0 5px #ccc;
 }
 
-
-
 body {
   background-image: url("shoot-n-design-71270-unsplash.jpg");
   background-size: cover;
@@ -49,26 +47,26 @@ body {
 }
 
 .top {
+  margin: 100px 20px 40px 20px;
+}
+
+.top, .map, .main, .estimate {
   background-color: rgba(200,200,200,.6);
-  margin: 100px;
   padding: 30px;
   text-align: center;
   color: var(--gray);
-  box-shadow:  0 20px #000;
+  box-shadow: 0 0 20px #000;
+  border: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .top p {
   font-size: 20px;
   padding-top: 20px;
-}
-.main {
-  background-color: rgba(200,200,200,.6);
-  margin: 20px;
-  border: 2px;
-  border-style: solid;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 0 15px;
 }
 
 .contact {
@@ -76,6 +74,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   padding: 10px;
+  justify-content: center;
 }
 
 .box {
@@ -86,12 +85,36 @@ body {
   overflow: auto;
   font-size: 15px;
   padding: 40px;
-
+  radius: 15px;
+  flex: auto;
+  flex-flow: column;
 }
 
 .box a {
-  position: absolute;
   color: var(--yellow);
   display: block;
-  justify-content: center;
 }
+
+.footer {
+  background-color: rgba(200,200,200,.6);
+  text-align: center;
+  color: var(--gray);
+  box-shadow: 0 0 20px #000;
+  border: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 10px;
+}
+/*
+@media(max-width: 837px) {
+  .contact {
+    grid-template-areas:
+    'box box'
+    'box box';
+  }
+
+}
+*/
