@@ -6,6 +6,7 @@
   --gray: #3A3A3C;
   --seethru: opacity(.8);
   --shadow: box-shadow: 0 0 5px #ccc;
+  --dark: black;
 }
 
 body {
