@@ -1,0 +1,121 @@
+:root {
+  --blue: #23B5AF;
+  --light-blue: #A9DDD9;
+  --yellow: #EEBA4C;
+  --red: #E3493B;
+  --gray: #3A3A3C;
+  --seethru: opacity(.8);
+  --shadow: box-shadow: 0 0 5px #ccc;
+  --dark: black;
+}
+
+body {
+  background-image: url("shoot-n-design-71270-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.nav-bar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: var(--gray);
+}
+
+.nav-bar a {
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  color: var(--yellow);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-bar a:hover {
+  background-color: var(--light-blue);
+  color: var(--gray);
+}
+
+.top {
+  margin: 100px 20px 40px 20px;
+}
+
+.top, .map, .main, .estimate {
+  background-color: rgba(200,200,200,.6);
+  padding: 30px;
+  text-align: center;
+  color: var(--gray);
+  box-shadow: 0 0 20px #000;
+  border: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.top p {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.box {
+  background-color: var(--gray);
+  color: var(--yellow);
+  text-align: center;
+  justify-content: center;
+  overflow: auto;
+  font-size: 15px;
+  padding: 40px;
+  radius: 15px;
+  flex: auto;
+  flex-flow: column;
+}
+
+.box a {
+  color: var(--yellow);
+  display: block;
+}
+
+.footer {
+  background-color: rgba(200,200,200,.6);
+  text-align: center;
+  color: var(--gray);
+  box-shadow: 0 0 20px #000;
+  border: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 10px;
+}
+/*
+@media(max-width: 837px) {
+  .contact {
+    grid-template-areas:
+    'box box'
+    'box box';
+  }
+
+}
+*/
